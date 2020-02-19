@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Black Jack</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="blackJack">
+        <div>
+            <h1>Black Jack</h1>
+        </div>
+        <input type="button" id="start-btn" value="Start" onclick="makePlayer()">
+
+        <div>
+            Dealer:
+            <div id="dealerHandDiv"></div>
+            <div id="boardDealerHandDiv"></div>
+            <div id="dealerHandValueDiv"><br></div>
+        </div>
+        <br>
+        Your Hand:
+        <div id="boardPlayerHandDiv"></div>
+        <div id="playerHandValueDiv"><br></div><br>
+        <input type="button" id="hit-btn" value="hit" onclick="hit()">
+        <input type="button" id="stand-btn" value="stand" onclick="stand()">
+        <br>
+        Bet: $<input type="text" value="10" id="betInput" style="width: 50px;"><br>
+        <input type="button" id="newHand-btn" value="Deal new hand" onclick="dealNewHand()">
+
+        <div id="playerHandDiv"></div>
+
+        <div id="messageDiv"></div>
+    
+<br>
+    
+        <div><strong>Name:</strong> <span id="playerNameDiv"></span></div>
+        <div><strong>Cash:</strong> $<span id="cash-span">0</span></div>
+    </div>
+    <div id="atmDiv">    
+        <div>ATM:</div>
+        <div id="atmMsgDiv">Stand by</div>
+        <div>Balance: $<span id="balance-span">0</span></div>
+        $<input type="text" id="atmInput" style="width: 100px;" placeholder="100">
+        <input type="button" id="withdraw-btn" value="Withdraw" onclick="withdraw()">
+        <input type="button" id="deposit-btn" value="Deposit" onclick="deposit()"><br>
+        <div id="atmInfoDiv"></div>
+        
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

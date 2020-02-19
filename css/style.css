@@ -1,0 +1,37 @@
+
+.card {
+    height: 100px;
+    width: 67px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    float: left;
+    margin: 2px;
+}
+.suit, .value {
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+}
+
+#boardPlayerHandDiv {
+    width: 100%;
+    height: 110px;
+}
+#boardDealerHandDiv {
+    width: 100%;
+    height: 110px;
+}
+
+#blackJack {
+    width: 50%;
+    float: left;
+}
+#atmDiv {
+    width: 50%;
+    float: left;
+}
+h1 {
+    margin: 0;
+    margin-bottom: 10px;
+}
